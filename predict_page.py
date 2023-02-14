@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+pip install -r requirements.txt
 from sklearn.preprocessing import StandardScaler
 
 
