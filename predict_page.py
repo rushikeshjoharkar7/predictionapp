@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 pip install -U scikit-learn scipy matplotlib
-from sklearn.preprocessing import StandardScaler
+from scikit-learn.preprocessing import StandardScaler
 
 
 
