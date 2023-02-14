@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-pip install -U scikit-learn scipy matplotlib
 from scikit-learn.preprocessing import StandardScaler
 
 
