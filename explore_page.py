@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 
 
 def show_explore_page():
-    st.title("Explore Software Engineer Salaries")
+    st.title("Yarn Properties prediction")
 
     st.write(
         """
-    ### Stack Overflow Developer Survey 2020
+    ### Prediction analysis
     """
     )
 
