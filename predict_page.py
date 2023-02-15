@@ -15,9 +15,9 @@ regression = data["model"]
 
 
 def show_predict_page():
-    st.title("Yarn count Prediction from Fibre Properties")
+    st.title("Yarn Properties Prediction from Fibre Properties")
 
-    st.write("""### We need some information to predict the Yarn Count (tex)""")
+    st.write("""### We need some information for Prediction""")
 
    
     A = st.number_input(label="2.5% span length (mm)",step=1.,format="%.2f")
@@ -28,11 +28,15 @@ def show_predict_page():
 
 
     ok = st.button("Calculate Yarn Count (tex)")
+    ok1 = st.button("Calculate CSP")
     
     if ok:
-        x = np.array([[A,B,C,D,E]])
-        
-       
+        x = np.array([[A,B,C,D,E]])     
         Count = regression.predict(x)
-        
         st.subheader(f"The estimated count is {Count[0]:.8f}")
+    
+    
+    if ok1:
+        x = np.array([[A,B,C,D,E]])     
+        Count = regression.predict(x)
+        st.subheader(f"The estimated CSP is {Count[0]:.8f}")
