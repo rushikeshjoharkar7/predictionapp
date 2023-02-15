@@ -33,5 +33,5 @@ def show_predict_page():
     if ok:
         x = np.array([[A,B,C,D,E]])     
         Count = regression.predict(x)
-        st.subheader(f"The estimated count is {Count[0]:.8f}\n"
-                     f"The estimated CSP is {Count[0]:.8f}")
+        st.subheader(f"The estimated count is {Count[0]:.8f}")
+        st.subheader(f"The estimated CSP is {Count[0]:.8f}")
