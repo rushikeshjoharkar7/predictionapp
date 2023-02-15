@@ -27,16 +27,11 @@ def show_predict_page():
     E = st.number_input(label="Trash content (%)",step=1.,format="%.2f")
 
 
-    ok = st.button("Calculate Yarn Count (tex)")
-    ok1 = st.button("Calculate CSP")
+    ok = st.button("Calculate Properties")
+    
     
     if ok:
         x = np.array([[A,B,C,D,E]])     
         Count = regression.predict(x)
-        st.subheader(f"The estimated count is {Count[0]:.8f}")
-    
-    
-    if ok1:
-        x = np.array([[A,B,C,D,E]])     
-        Count = regression.predict(x)
-        st.subheader(f"The estimated CSP is {Count[0]:.8f}")
+        st.subheader(f"The estimated count is {Count[0]:.8f}\n"
+                     f"The estimated CSP is {Count[0]:.8f}")
